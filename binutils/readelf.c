@@ -11956,6 +11956,10 @@ is_none_reloc (unsigned int reloc_type)
 	      || reloc_type == 32 /* R_AVR_DIFF32.  */);
     case EM_METAG:
       return reloc_type == 3; /* R_METAG_NONE.  */
+    case EM_MICROBLAZE:
+      return reloc_type == 30 /* R_MICROBLAZE_32_NONE.  */
+             || reloc_type == 0 /* R_MICROBLAZE_NONE.  */
+             || reloc_type == 9; /* R_MICROBLAZE_64_NONE.  */
     case EM_NDS32:
       return (reloc_type == 0       /* R_XTENSA_NONE.  */
 	      || reloc_type == 204  /* R_NDS32_DIFF8.  */
